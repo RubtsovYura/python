@@ -122,6 +122,7 @@ class Handle(Stationery):
     def draw(self):
         return f"Начинаем отрисовку {self.title}"
 
+
 pen = Pen("Ручкой")
 print(pen.draw())
 pencil = Pencil("Карандашем")
