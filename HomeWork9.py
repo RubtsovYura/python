@@ -55,7 +55,7 @@ print(p.get_total_income(), p.get_full_name())
 """Задание 4"""
 
 class Car():
-    def __init__(self, speed, color, name, is_police = True):
+    def __init__(self, name, speed, color , is_police = True):
         self.speed = speed
         self.color = color
         self.name = name
@@ -82,7 +82,7 @@ class SportCar(Car):
 class WorkCar(Car):
     def show_speed(self):
         if self.speed > 40:
-            return f"Ты что гонщик? Это рабочая машина, едь со скоростью  быть меньше {self.speed}"
+            return f"Ты что гонщик? Это рабочая машина, едь со скоростью  меньше {self.speed}"
         else:
             return f"Твоя скорость машины {self.speed}. Что в пределах нормы."
 class PoliceCar(Car):
